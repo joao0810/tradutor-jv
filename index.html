@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Tradutor</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <div class="caixa-maior">
+
+    <!-- TEXTO DE ENTRADA -->
+    <textarea
+      class="input-texto"
+      placeholder="Digite o texto aqui..."
+    ></textarea>
+
+    <!-- CONTROLES -->
+    <div class="controle">
+
+      <select class="idioma">
+        <option value="en">Inglês</option>
+        <option value="de">Alemão</option>
+        <option value="ja">Japonês</option>
+        <option value="es">Espanhol</option>
+      </select>
+
+      <button onclick="traduzir()">
+        <img src="img/traduzir.svg" alt="Traduzir">
+      </button>
+
+      <button onclick="microfone()">
+        <img src="img/microfone.svg" alt="Microfone">
+      </button>
+
+    </div>
+
+    <!-- RESULTADO -->
+    <div class="resultado">
+      <h3 class="titulo-traducao">Tradução</h3>
+      <p class="traducao">A Tradução aparecerá aqui...</p>
+    </div>
+
+  </div>
+
+  <!-- SCRIPT (tem que ficar AQUI) -->
+  <script src="scripts.js"></script>
+
+</body>
+</html>
